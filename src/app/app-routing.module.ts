@@ -3,10 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path:'produtos',loadChildren: ()=> import('./produtos/produtos.module').then(m => m.ProdutosModule)
+    path:'', pathMatch:'full', redirectTo:'categorias'
   },
   {
     path:'categorias',loadChildren: ()=> import('./categorias/categorias.module').then(m => m.CategoriasModule)
+  },
+  {
+    path:'produtos',loadChildren: ()=> import('./produtos/produtos.module').then(m => m.ProdutosModule)
   }
 ];
 
