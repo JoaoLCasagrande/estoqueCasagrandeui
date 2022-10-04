@@ -9,10 +9,12 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { CoreModule } from './core/core.module';
+import { CoreComponent } from './core/core.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CoreComponent
   ],
   imports: [
     BrowserModule,

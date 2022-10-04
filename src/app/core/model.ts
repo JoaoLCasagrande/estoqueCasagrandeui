@@ -5,6 +5,6 @@ export interface Categoria{
 
 export interface Produto{
   id:number;
-  nomeproduto:string;
+  nomealuno:string;
   //Categoria = new Categoria();// //apagas as barras dps//
 }
