@@ -11,7 +11,7 @@ import { CategoriasService } from '../categorias.service';
 export class CategoriaComponent implements OnInit {
 
   categorias: Observable<Categoria[]>;
-  displayedColumns = ['id','nomecurso'];
+  displayedColumns = ['id','nomecategoria'];
 
   constructor(private categoriasService: CategoriasService) {
     this.categorias = this.categoriasService.list();
